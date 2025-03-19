@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alp's Radical Page!</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #44975e;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            cursor: url("nyan.cur"), default;
+        }
+        
+        header {
+            background-color: #7f8ad6;
+            text-align: center;
+            padding: 1rem 0;
+            border-bottom: 5px dashed #d7e2df;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style-type: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: underline;
+            color: #bbda8a;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+            background-color: #ade1d2;
+            margin: 20px auto;
+            max-width: 600px;
+            border: 3px double #ffffff;
+        }
+
+        h2 {
+            background-color: #e1e7ee;
+            padding: 5px;
+            border: 2px inset #ffffff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #7f8ad6;
+            border-top: 5px dashed #ffffff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    
+    <header>
+        <h1>Alp's Radical Page!</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#hobbies">Cool Stuff I Do</a></li>
+                <li><a href="#contact">Pager Number</a></li>
+            </ul>
+        </nav>
+        <button onclick="playMidi()">Initiate Epic Music</button>
+
+    <audio id="midiAudio" loop>
+        <source src="song.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <script>
+        function playMidi() {
+            document.getElementById('midiAudio').play();
+        }
+    </script>
+    </header>
+
+    <main>
+        <article>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    YO! I'm Alp and this is my really cool webpage! I'm an undergraduate student at Toronto Metropolitan University, studying computer science.
+                </p>
+            </section>
+
+            <section id="hobbies">
+                <h2>Cool Stuff I Do</h2>
+                <p>
+                    I'm all about that gnarly '90s life. When I'm not locked in epic battles on Tony Hawk's Pro Skater or racing in Mario Kart, you'll find me shredding it up at the local skatepark. And hey, nothing beats the vibes of cruising around town on my board with Linkin Park's 'Hybrid Theory' blasting through my headphones. So, if you're down for some old-school gaming or just wanna trade some Linkin Park mixtapes, hit me up! Keep it radical!
+                </p>
+            </section>
+        </article>
+
+        <aside>
+            <details>
+                <summary>Rad Facts About Me</summary>
+                <ul>
+                    <li>High score holder in Pac-Man at the local arcade.</li>
+                    <li>Own every episode of "Saved by the Bell" on VHS.</li>
+                    <li>Can do a wicked kickflip on my skateboard.</li>
+                </ul>
+            </details>
+        </aside>
+
+        <figure>
+            <figcaption>My favorite quote:</figcaption>
+            <blockquote>"Life moves pretty fast. If you don't stop and look around once in a while, you could miss it." - Ferris Bueller</blockquote>
+        </figure>
+    </main>
+
+    <footer>
+        <div id="contact">
+            <h2>Hit Me Up!</h2>
+            <p>Pager: 647-978-XXXX</p>
+            <p>Email: ysekban@torontomu.ca</p>
+        </div>
+    </footer>
+</body>
+
+</html>

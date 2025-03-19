@@ -1,0 +1,17 @@
+<svg width="600" height="150" xmlns="http://www.w3.org/2000/svg">
+  <!-- Triangle -->
+  <polygon points="100,10 45,110 155,110" stroke="black" fill="#FFFF00" />
+  <text x="100" y="130" font-family="Verdana" font-size="15" fill="black" text-anchor="middle">Triangle</text>
+  
+  <!-- Quadrilateral -->
+  <rect x="175" y="10" width="100" height="100" stroke="black" fill="#87CEEB" />
+  <text x="225" y="130" font-family="Verdana" font-size="15" fill="black" text-anchor="middle">Quadrilateral</text>
+  
+  <!-- Pentagon -->
+  <polygon points="300,50 350,10 400,50 380,110 320,110" stroke="black" fill="#FFA07A" />
+  <text x="350" y="130" font-family="Verdana" font-size="15" fill="black" text-anchor="middle">Pentagon</text>
+  
+  <!-- Hexagon -->
+  <polygon points="430,35 470,10 510,35 510,85 470,110 430,85" stroke="black" fill="#90EE90" />
+  <text x="470" y="130" font-family="Verdana" font-size="15" fill="black" text-anchor="middle">Hexagon</text>
+</svg>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 04</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<h2>Problem 1</h2>
+
+<form id="infoForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required><br><br>
+    
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone" required><br><br>
+    
+    <input type="button" value="Submit" onclick="processForm()">
+</form>
+    
+<div id="output"></div>
+
+<h2>Problem 2</h2>
+
+<textarea id="textInput" oninput="updateCounts()"></textarea>
+<div id="charCount" style="font-size: 2em;"></div>
+<div id="letterCount" style="font-size: 2em;"></div>
+
+<h2>Problem 3</h2>
+
+<div id="bookmarks"></div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

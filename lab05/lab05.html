@@ -1,0 +1,71 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 05</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Problem 1: Mr. Potato Head</h2>
+    <div class="selections">
+        <label>Eyes:</label>
+        <select id="eyesSelection">
+            <option value="images/potatoEyePair.gif">Pair</option>
+            <option value="images/potatoGirlEyes.gif">Girl</option>
+        </select>
+        <label>Nose:</label>
+        <select id="noseSelection">
+            <option value="images/potatoNose.gif">Regular</option>
+            <option value="images/potatoSkinnyNose.gif">Skinny</option>
+        </select>
+        <label>Mouth:</label>
+        <select id="mouthSelection">
+            <option value="images/potatoMouth.gif">Smile</option>
+            <option value="images/potatoLips.gif">Lips</option>
+            <option value="images/potatoTeeth.gif">Teeth</option>
+        </select>
+        <label>Hat:</label>
+        <select id="hatSelection">
+            <option value="images/potatoHat.gif">Hat</option>
+            <option value="images/potatoTopHat.gif">Top Hat</option>
+            <option value="images/potatoCaptainHat.gif">Captain Hat</option>
+            <option value="">None</option>
+        </select>
+    </div>
+    <div id="canvas">
+        <img src="images/potatoBody.gif" id="body" class="draggable">
+        <img src="images/potatoEyePair.gif" id="eyes" class="draggable">
+        <img src="images/potatoNose.gif" id="nose" class="draggable">
+        <img src="images/potatoMouth.gif" id="mouth" class="draggable">
+        <img src="images/potatoHat.gif" id="hat" class="draggable">
+        <img src="images/potatoRightEar.gif" id="right_ear" class="draggable">
+        <img src="images/potatoLeftEar.gif" id="left_ear" class="draggable">
+    </div>
+    <button id="saveBtn" class="btn btn-primary">Save as PNG</button>
+</div>
+
+<div class="container">
+    <h2>Problem 2: Full Screen Image</h2>
+    <button class="btn btn-danger close-icon" style="display: none;">&times;</button>
+    <div class="gallery">
+        <div class="image-container">
+            <img src="images/toronto.jpg" class="gallery-image" alt="Toronto landscape">
+        </div>
+        <div class="image-container">
+            <img src="images/newyork.jpg" class="gallery-image" alt="NY landscape">
+        </div>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

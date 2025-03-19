@@ -1,0 +1,8 @@
+
+<svg width="300" height="250" stroke="black" xmlns="http://www.w3.org/2000/svg">
+  <!-- White stripe -->
+  <rect width="300" height="100" fill="#FFFFFF" />
+  <!-- Red stripe -->
+  <rect y="100" width="300" height="100" fill="#DC143C" />
+  <text x="150" y="220" font-family="Verdana" font-size="15" fill="black" text-anchor="middle">Flag of Poland as SVG</text>
+</svg>

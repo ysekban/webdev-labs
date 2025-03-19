@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>City Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+        .form-container {
+            background-color: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #333;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script>
+        function submitToRuby() {
+            var form = document.getElementById("cityForm");
+            form.action = "https://www2.cs.torontomu.ca/~ysekban/cgi-bin/lab10r.cgi"; // Set the action to your Ruby CGI script
+            form.submit(); // Submit the form
+        }
+
+        function submitToPython() {
+            var form = document.getElementById("cityForm");
+            form.action = "https://www2.cs.torontomu.ca/~ysekban/cgi-bin/lab10p.cgi"; // Set the action to your Python CGI script
+            form.submit(); // Submit the form
+        }
+    </script>
+</head>
+<body>
+    <div class="form-container">
+        <h2>City Information Form</h2>
+        <form id="cityForm" method="post">
+            <label for="city">City Name:</label>
+            <input type="text" id="city" name="city">
+
+            <label for="state">State/Province (if applicable):</label>
+            <input type="text" id="state" name="state">
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country">
+
+            <label for="picture">Picture URL:</label>
+            <input type="text" id="picture" name="picture">
+
+            <input type="button" value="Submit to Ruby CGI" onclick="submitToRuby()" class="btn">
+            <input type="button" value="Submit to Python CGI" onclick="submitToPython()" class="btn">
+        </form>
+    </div>
+</body>
+</html>
